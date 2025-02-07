@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", serif;
+}
+
+nav {
+    background-color: rgb(236, 110, 7);
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    margin-left: 10px;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(223, 215, 231);
+    cursor: pointer;
+}
+
+.gameInfo {
+    padding: 0 34px;
+}
+
+.info {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.image img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+#reset {
+    margin: 2px 20px;
+    padding: 6px 18px;
+    border-radius: 30px;
+    background-color: rgb(156, 80, 232);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+}
+
+#reset:hover {
+    background-color: rgb(183, 127, 238);
+}
+
+@media screen and (max-width: 700px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-rows: repeat(3, 16vw);
+        grid-template-columns: repeat(3, 16vw);
+    }
+
+    .gameInfo {
+        margin-top: 24px;
+    }
+
+    .gameInfo h1 {
+        font-size: 24px;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+}
