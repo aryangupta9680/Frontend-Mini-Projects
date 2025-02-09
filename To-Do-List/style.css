@@ -7,11 +7,20 @@
     font-family: "Poppins", serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .todo-app {
@@ -65,7 +74,7 @@
     border-radius: 35px;
 }
 
-.row button:hover{
+.row button:hover {
     background: #f34b39;
 }
 
@@ -103,7 +112,7 @@ ul li.checked {
     text-decoration: line-through;
 }
 
-ul li.checked span { 
+ul li.checked span {
     text-decoration: none;
 }
 
@@ -113,7 +122,7 @@ ul li.checked::before {
     width: 30px;
 }
 
-ul li span{
+ul li span {
     width: 42px;
     height: 42px;
     font-size: 24px;
@@ -125,7 +134,31 @@ ul li span{
     flex-shrink: 0;
 }
 
-ul li span:hover{
+ul li span:hover {
     background: #edeef0;
     border-radius: 40px;
+}
+
+@media screen and (max-width: 430px) {
+    .todo-app {
+        width: 91%;
+        margin: 20px auto;
+        padding: 30px 20px;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+        padding-left: 10px;
+    }
+
+    .row input {
+        min-width: 0;
+        margin-right: 10px;
+    }
+
+    .row button {
+        white-space: nowrap;
+        padding: 12px 30px;
+        width: 40%;
+    }
 }
