@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #bbc6fa;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box {
+    background: #fff;
+    width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+    min-height: 50vh;
+    margin: 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-box h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 50px;
+    font-weight: 600;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    margin-top: 15px;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.quote-box span::before {
+    content: '--- by ';
+    margin-right: 5px;
+}
+
+.quote-box .btn {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box .btn button {
+    background: rgb(23, 124, 229);
+    color: white;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.quote-box .btn button:hover {
+    background: #3998fa;
+}
+
+@media screen and (max-width: 450px) {
+    .quote-box {
+        width: 340px;
+    }
+
+    .quote-box h2 {
+        font-size: 30px;
+    }
+
+    .quote-box blockquote {
+        font-size: 20px;
+    }
+}
