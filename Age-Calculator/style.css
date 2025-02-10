@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #755eef;
+    width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+    min-height: 50vh;
+    margin: 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-box {
+    margin: 40px 0px;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box input {
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.input-box button {
+    background: #ffc942;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background: #ffbf1e;
+}
+
+#result {
+    font-size: 20px;
+}
+
+#result span {
+    color: #ffbf1e;
+}
+
+@media screen and (max-width: 520px) {
+    .input-box input::-webkit-calendar-picker-indicator {
+        background-size: 15px;
+    }
+
+    .input-box input {
+        padding: 14px 6px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    .input-box button {
+        padding: 13px 4px;
+        font-size: 10px;
+    }
+}
