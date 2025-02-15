@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 600;
+    gap: 7px;
+}
+
+.container h1 img {
+    width: 60px;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 13px;
+    gap: 6px;
+    background: linear-gradient(#9418fd, #571094);
+    color: white;
+    cursor: pointer;
+    margin: 20px 20px 20px 0px;
+    font-size: 16px;
+}
+
+.container button:hover {
+    background: linear-gradient(#c172fd, #7100e0);
+}
+
+.container button img {
+    width: 25px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 25px 0px;
+    outline: none;
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .input-box{
+        width: 90%;
+        margin-right: 20px;
+    }
+}
